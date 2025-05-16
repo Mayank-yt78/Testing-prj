@@ -1,4 +1,4 @@
-// utils/seedAdmin.js
+
 import Admin from "../models/Admin.js";
 import bcrypt from "bcryptjs";
 
