@@ -10,14 +10,14 @@ import reviewRoutes from './routes/reviewRoutes.js';
 import contactRoutes from './routes/contactRoutes.js';
 import careerRoutes from './routes/careerRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
-import { seedAdmin } from './utils/seedAdmin.js'; // 👈 Import admin seeder
+import { seedAdmin } from './utils/seedAdmin.js'; 
 
 dotenv.config();
 
 const startServer = async () => {
   try {
-    await connectDB();        // Connect DB
-    await seedAdmin();        // 👈 Seed default admin if not exists
+    await connectDB();       
+    await seedAdmin();        
 
     const app = express();
 
@@ -41,5 +41,5 @@ const startServer = async () => {
   }
 };
 
-startServer(); // 👈 Start everything
+startServer(); 
  
